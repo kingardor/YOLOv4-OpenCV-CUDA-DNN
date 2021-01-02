@@ -64,6 +64,7 @@ class YOLOv4:
             cv2.rectangle(frame, (left, top), (left + len(label) * 20, top - 30), (b, g, r), cv2.FILLED)
             cv2.putText(frame, label, (left, top), cv2.FONT_HERSHEY_COMPLEX, 1, (255 - b, 255 - g, 255 - r), 1, cv2.LINE_AA)
 
+        cv2.imwrite('result.jpg', frame)
         cv2.namedWindow('Inference', cv2.WINDOW_NORMAL)
         cv2.imshow('Inference', frame)
         if cv2.waitKey(0) & 0xFF == ord('q'):
