@@ -1,15 +1,42 @@
 # YOLOv4 OpenCV DNN
 
-Run YOLOv4 directly with OpenCV using DNN module.
+Run YOLOv4 directly with OpenCV using the DNN module.
 
 ![<span>Photo by <a href="https://unsplash.com/@christopher__burns?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Burns</a> on <a href="https://unsplash.com/s/photos/people?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>](resources/cover.jpg)
 
 ## Index
 
-1. [Install Dependencies](#Install-Dependencies)
-2. [Runn the code](#Run-the-code)
+1. [Clone the repository](#Clone-the-repository)
+2. [Install pip packages](#Install-pip-packages)
+3. [Run the code](#Run-the-code)
 
-## Install Dependencies
+## Clone the repository
+
+This is a straightforward step, however, if you are new to git or git-lfs, I recommend glancing threw the steps.
+
+First, install git and git-lfs
+
+```sh
+sudo apt install git git-lfs
+```
+
+Next, clone the repository
+
+```sh
+# Using HTTPS
+git clone https://github.com/aj-ames/YOLOv4-OpenCV-DNN.git
+# Using SSH
+git clone git@github.com:aj-ames/YOLOv4-OpenCV-DNN.git
+```
+
+Finally, enable lfs and pull the yolo weights
+
+```sh
+git lfs install
+git lfs pull
+```
+
+## Install pip packages
 
 First, we need to install python dependencies. Make sure you have a working build of python3.7/3.8
 
