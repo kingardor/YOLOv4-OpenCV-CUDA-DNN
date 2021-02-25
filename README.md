@@ -151,20 +151,20 @@ optional arguments:
 To pass an image, run the script in the following way:
 
 ```sh
-python3 dnn_infernece.py --image images/example.jpg --use-gpu
+python3 dnn_infernece.py --image images/example.jpg --use_gpu
 ```
 
 To run a stream, run the script this way:
 
 ```sh
 # Video
-python3 dnn_inference.py --stream video.mp4 --use-gpu
+python3 dnn_inference.py --stream video.mp4 --use_gpu
 
 # RTSP
-python3 dnn_inference.py --stream rtsp://192.168.1.1:554/stream --use-gpu
+python3 dnn_inference.py --stream rtsp://192.168.1.1:554/stream --use_gpu
 
 # Webcam
-python3 dnn_inference.py --stream webcam --use-gpu
+python3 dnn_inference.py --stream webcam --use_gpu
 ```
 
 ## CPU vs. GPU Performance Metrics
